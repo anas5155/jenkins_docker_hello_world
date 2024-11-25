@@ -11,6 +11,7 @@ pipeline {
 		}
 		stage('Build') {
 			steps {
+				sh 'javac HelloWorld.java'
 				sh 'jar cf HelloWorld.jar HelloWorld.class'
 			}
 		}
